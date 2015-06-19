@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle package'
-      'command': 'package:toggle'
+      'label': 'Toggle sliderize'
+      'command': 'sliderize:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'package'
+      'label': 'sliderize'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'package:toggle'
+          'command': 'sliderize:toggle'
         }
       ]
     ]
