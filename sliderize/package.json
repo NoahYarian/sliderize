@@ -1,12 +1,12 @@
 {
   "name": "sliderize",
   "main": "./lib/sliderize",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Sliderize replaces numbers with sliders",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "sliderize:toggle"
+    "atom-workspace": ["sliderize:toggle", "sliderize:createHighlight"]
   },
   "repository": {
     "type": "git",

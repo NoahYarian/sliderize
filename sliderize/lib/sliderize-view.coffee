@@ -20,3 +20,15 @@ class SliderizeView
 
   getElement: ->
     @element
+
+  createHighlight: ->
+    color = "red"
+    editor = atom.workspace.getActiveTextEditor()
+    range = editor.getSelectedBufferRange()
+    console.log range
+    # create a marker that never invalidates that folows the user's selection range
+    marker = editor.markBufferRange(range, invalidate: 'never')
+    #(?) marker.bufferMarker.setProperties('addy-highlight': color)
+
+    # create a decoration that follows the marker. A Decoration object is returned which can be updated
+    decoration = editor.decorateMarker(marker, type: 'highlight', class: "highlight-#{color}")
